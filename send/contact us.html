@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #383636;
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 0%;
+            margin: 0%;
+        }
+    
+        .form {
+          background-color: #5b3005;
+            border: 2px solid rgb(252, 247, 247);
+            border-radius: 6px;
+            border-top: -34px;
+            max-width: 400px;
+            margin: auto;
+            padding: 15px;
+            margin-top: 15px;
+            backdrop-filter: blur(30px);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        h1{
+            text-align: center;
+            background: linear-gradient(to right, rgb(255, 253, 253), rgb(228, 228, 179));
+            background-clip: text;
+            color: transparent;
+            font-size: 39px;
+            margin-top: 15px;
+        }
+        label {
+            display: block;
+            color: #ffffff;
+        }
+        label,input[type=text],textarea,select,input[type=email],input[type=password],input[type=tel],input[type=date]{
+            background:transparent;
+            margin-top: 15px;
+            border-radius: 6px;
+} 
+input[type=text],select,input[type=email],input[type=password],input[type=tel],input[type=date]{
+    width: 220px;
+    height: 18px;
+    color: #ffffff;
+}
+
+select{
+    width: 100px;   
+    height: 25px;
+    margin-left: 15px;
+    color: #ffffff;
+}
+select:focus{
+ background-color: rgb(19, 16, 199);
+}
+        .jello-horizontal {
+            color: #292626;
+            text-align: center;
+             margin-left: 160px;
+             margin-top: 23px;
+             margin-bottom: 10px;
+             width: 80px;
+             height: 30px;
+             border-radius: 6px;
+        }
+
+        .jello-horizontal:hover {
+	-webkit-animation: jello-horizontal 0.9s both;
+	        animation: jello-horizontal 0.9s both;
+            background-color: rgb(194, 165, 233);
+}
+
+ @-webkit-keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+            transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+            transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+            transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+            transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+            transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+            transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+            transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+            transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+textarea{
+  color: #ffffff;
+  margin-top: 8px;
+}
+footer{
+    margin-top: 35px;
+    padding: 10px;
+    text-align: center;
+    backdrop-filter: blur(20px);
+    background-color: #172447;
+    color: aliceblue;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+::placeholder{
+  color: rgb(214, 201, 183);
+}
+    </style>
+    <script src="chat.js"></script>
+</head>
+<body>
+    <form class="form" action="" id="form">
+    <h1>Contact Us</h1>
+    <label for="">Name</label>
+    <input type="text" id="name" placeholder="Enter Your Name">
+    <label for="">Email</label>
+    <input type="email" id="email" placeholder="Enter Your exm.@gmail.com">
+    <label for="">Password</label>
+    <input type="password" id="password" placeholder="Enter Your Password">
+    <label for="">Date of Submiting</label>
+    <input type="date" id="date">
+    <label style="margin-top: 15px;" for="">Comment Your problem</label>
+    <textarea name="" id="explain" cols="50" rows="10" placeholder="Write your suggestion..."></textarea>
+<button id="submit" class="jello-horizontal">SUBMIT</button>
+  </form>
+ <footer>&copy;All Right Reserved. MUHAMMAD UMAR</footer>
+</body>
+</html>
